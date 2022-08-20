@@ -1,0 +1,61 @@
+// .hero {
+//     text-align: center;
+//     color: var(--primary-white-color);
+//     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//         url(../images/Фон_вверху_html/Img.jpg);
+//     background-repeat: no-repeat;
+//     background-position: center center;
+//     background-size: cover;
+//     background-color: var(--new-hero-theme);
+
+//     @media screen and (min-width: 768px), (min-width: 1600px) {
+//         flex-basis: 50%;
+//         flex-wrap: wrap;
+//         align-items: center;
+//         max-width: 1600px;
+//         height: 600px;
+//         margin-left: auto;
+//         margin-right: auto;
+//         padding: 200px 0;
+//     }
+// }
+
+// .hero-title {
+//     @include font(44px, 900, 60px);
+//     text-align: center;
+//     letter-spacing: 0.06em;
+//     text-transform: uppercase;
+//     color: var(--primary-white-color);
+
+//     @media screen and (min-width: 768px), (min-width: 1600px) {
+//         margin-left: 237px;
+//         margin-right: 237px;
+//         margin-bottom: 30px;
+//     }
+// }
+
+// .button-hero {
+//     @include font(16px, 700, 30px);
+//     letter-spacing: 0.06em;
+//     align-items: center;
+//     text-align: center;
+//     border-style: none;
+//     width: 200px;
+//     height: 50px;
+//     border-radius: 4px;
+//     background-color: var(--accent-color);
+//     color: var(--primary-white-color);
+//     display: block;
+//     // padding: auto;
+//     margin: auto;
+//     text-decoration: none;
+//     transition: background-color var(--transition-dur-and-funk);
+
+//     &:hover,
+//     &:focus {
+//         background-color: var(--accent-light-color);
+//     }
+
+//     @media screen and (min-width: 768px), (min-width: 1600px) {
+//     }
+// }

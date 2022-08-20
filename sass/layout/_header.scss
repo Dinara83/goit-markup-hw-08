@@ -1,0 +1,99 @@
+// .page-header {
+//     border: 1px solid var(--line-header);
+// }
+
+// .page-header-container {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+// }
+
+// .page-header-nav {
+//     display: flex;
+//     align-items: center;
+//     position: color var(--transition-dur-and-funk);
+// }
+
+// .page-header__logo {
+//     margin-right: 93px;
+// }
+
+// .logo {
+//     font-family: var(--secondary-font);
+//     @include font(26px, 700, 31px);
+//     letter-spacing: 0.03em;
+//     color: var(--accent-color);
+
+//     .logo-studio {
+//         font-family: var(--secondary-font);
+//         @include font(26px, 700, 31px);
+//         letter-spacing: 0.03em;
+//         color: var(--basic-color);
+//     }
+// }
+
+// .menu-nav {
+//     display: flex;
+//     align-items: center;
+// }
+
+// .menu-nav__item:not(:last-child) {
+//     margin-right: 50px;
+//     cursor: pointer;
+// }
+
+// .menu-nav__link {
+//     padding: 32px 0;
+//     display: block;
+//     font-weight: 500;
+//     color: var(--basic-color);
+//     transition: color var(--transition-dur-and-funk);
+
+//     &:hover,
+//     &:focus {
+//         color: var(--accent-color);
+//     }
+// }
+
+// .menu-nav__link_current {
+//     position: relative;
+//     color: var(--accent-color);
+
+//     &::after {
+//         position: absolute;
+//         content: '';
+//         left: 0;
+//         bottom: 0;
+//         margin-bottom: -1px;
+//         width: 100%;
+//         height: 4px;
+//         background-color: var(--accent-color);
+//         border-radius: 2px;
+//         transition: background-color var(--transition-dur-and-funk);
+//     }
+// }
+
+// .menu-nav__contact-link {
+//     padding: 32px 0;
+//     display: block;
+//     font-weight: 500;
+//     color: var(--primary-color);
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     transition: color var(--transition-dur-and-funk);
+
+//     &:hover,
+//     &:focus {
+//         color: var(--accent-color);
+//     }
+// }
+
+// .menu-contact-icon {
+//     fill: currentColor;
+//     margin-right: 10px;
+
+//     &:hover {
+//         fill: var(--accent-color);
+//     }
+// }

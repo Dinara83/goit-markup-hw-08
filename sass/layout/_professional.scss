@@ -1,0 +1,86 @@
+// .professional {
+//     background-color: var(--primary-light-grey-color);
+//     padding-top: 94px;
+// }
+
+// .professional-title {
+//     padding: 0px;
+//     @include font(36px, 700, 42px);
+//     letter-spacing: 0.03em;
+//     text-align: center;
+//     color: var(--basic-color);
+//     margin-bottom: 50px;
+// }
+
+// .professional-list {
+//     display: flex;
+
+//     .professional-list__item {
+//         width: 270px;
+//         background: var(--primary-white-color);
+//         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//             0px 2px 1px rgba(0, 0, 0, 0.2);
+//         border-radius: 0px 0px 4px 4px;
+//     }
+
+//     & > .professional-list__item:not(:last-child) {
+//         margin-right: 30px;
+//     }
+// }
+
+// .professional-title-list {
+//     padding: 30px 30px;
+
+//     .professional-team {
+//         @include font(16px, 500, 19px);
+//         text-align: center;
+//         letter-spacing: 0.03em;
+//         color: var(--basic-color);
+//         margin-bottom: 10px;
+//     }
+
+//     .profile {
+//         @include font($fs: 16px, $lh: 19px);
+//         letter-spacing: 0.03em;
+//         text-align: center;
+//         color: var(--primary-color);
+//         margin-top: 10px;
+//         margin-bottom: 16px;
+//     }
+// }
+
+// .social {
+//     display: flex;
+//     justify-content: center;
+//     gap: 10px;
+
+//     .social__item {
+//         cursor: pointer;
+//     }
+
+//     .social-link {
+//         @extend %align;
+//         width: 44px;
+//         height: 44px;
+//         border-radius: 50%;
+//         background-color: var(--primary-white-color);
+//         transition: background-color var(--transition-dur-and-funk),
+//             box-shadow var(--transition-dur-and-funk);
+
+//         &:hover,
+//         &:focus {
+//             background-color: var(--accent-color);
+//             box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+//         }
+//     }
+
+//     .social-icon {
+//         fill: var(--secondary-grey-color);
+//         transition: fill var(--transition-dur-and-funk);
+
+//         .social-link:hover &,
+//         .social-link:focus & {
+//             fill: var(--primary-white-color);
+//         }
+//     }
+// }
