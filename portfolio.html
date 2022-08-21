@@ -40,7 +40,18 @@
                         </li>
                     </ul>
                 </nav>
-                <ul class="menu-nav">
+                <button type="button" class="mobile-menu-open" data-menu-open>
+                    <svg class="mobile-menu-open__icon" width="40" height="40">
+                        <use href="./images/icon/symbol-defs.svg#burger-icon"></use>
+                    </svg>
+                </button>
+                <button type="button" class="mobile-menu-open" data-menu-open>
+                    <svg class="mobile-menu-open__icon" width="40" height="40">
+                        <use href="./images/icon/symbol-defs-modal.svg#burger-icon"></use>
+                    </svg>
+                </button>
+
+                <ul class="menu-nav-contact">
                     <li class="menu-nav__item">
                         <a class="menu-nav__contact-link" href="meilto:info@devstudio.com">
                             <svg class="menu-contact-icon" width="16" height="12">
@@ -57,6 +68,29 @@
                         >
                     </li>
                 </ul>
+            </div>
+            <div class="mobile-menu" data-menu>
+                <div class="container mobile-menu__container">
+                    <button class="mobile-menu__close-btn" data-menu-close>
+                        <svg class="mobile-menu__close-icon" width="40" height="40">
+                            <use href="./images/icon/symbol-defs-modal.svg#close-black-icon"></use>
+                        </svg>
+                    </button>
+                    <ul>
+                        <li>
+                            <a href="">link-1</a>
+                        </li>
+                        <li>
+                            <a href="">link-2</a>
+                        </li>
+                        <li>
+                            <a href="">link-3</a>
+                        </li>
+                        <li>
+                            <a href="">link-4</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </header>
         <!-- --------------------------------- PORTFOLIO --------------------------------- -->
@@ -328,12 +362,13 @@
                         />
                         <button type="submit" class="contact-form-btn">
                             Подписаться<svg class="form-form-btn-icon" width="24" height="24">
-                                <use href="./images/icon/symbol-defs_2.svg#icon-send"></use>
+                                <use href="./images/icon/symbol-defs-modal.svg#icon-send"></use>
                             </svg>
                         </button>
                     </div>
                 </form>
             </div>
         </footer> -->
+        <script src="./js/mobile-menu.js"></script>
     </body>
 </html>

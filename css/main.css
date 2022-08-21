@@ -100,23 +100,72 @@ button {
   padding-right: 15px;
 }
 @media screen and (min-width: 480px) {
-  .container .container {
+  .container {
     width: 480px;
     margin-left: auto;
     margin-right: auto;
   }
 }
-@media screen and (min-width: 738px) {
-  .container .container {
+@media screen and (min-width: 768px) {
+  .container {
     width: 738px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .container .container {
+  .container {
     width: 1200px;
   }
 }
 
+@media screen and (max-width: 767px) {
+  .mobile-menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: var(--primary-white-color);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity var(--transition-dur-and-funk), visibility var(--transition-dur-and-funk);
+  }
+  .mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .mobile-menu__container {
+    position: relative;
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .mobile-menu__close-btn {
+    position: absolute;
+    justify-items: center;
+    top: 10px;
+    right: 15px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+  }
+  .mobile-menu__close-btn .mobile-close-btn-icon {
+    fill: var(--basic-color);
+    transition: fill var(--transition-dur-and-funk);
+  }
+  .mobile-close-btn:hover .mobile-menu__close-btn .mobile-close-btn-icon, .mobile-close-btn:focus .mobile-menu__close-btn .mobile-close-btn-icon {
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
 .backdrop {
   position: fixed;
   top: 0;
@@ -314,4 +363,54 @@ button {
 .modal-form-submit:hover, .modal-form-submit:focus {
   background-color: var(--accent-light-color);
   color: var(--primary-white-color);
+}
+
+@media screen and (max-width: 767px) {
+  .menu-nav {
+    display: none;
+  }
+  .menu-nav-contact {
+    display: none;
+  }
+}
+.page-header {
+  border: 1px solid var(--line-header);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.page-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-menu-open {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
+}
+
+.logo {
+  font-family: var(--secondary-font);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.1666666667;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+.logo .logo-studio {
+  font-family: var(--secondary-font);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.1666666667;
+  letter-spacing: 0.03em;
+  color: var(--basic-color);
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu-open {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */

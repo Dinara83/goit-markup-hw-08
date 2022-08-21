@@ -7,6 +7,11 @@
 @import './base/section';
 @import './base/container';
 
+@import './components/mobile-menu';
+@import './components/backdrop';
+@import './components/modal-window';
+@import './components/modal-form';
+
 @import './layout/header';
 @import './layout/hero';
 @import './layout/visually';
@@ -18,7 +23,3 @@
 @import './layout/under';
 @import './layout/footer-social';
 @import './layout/contact-form';
-
-@import './components/backdrop';
-@import './components/modal-window';
-@import './components/modal-form';
