@@ -1,50 +1,65 @@
 .hero {
     text-align: center;
     color: var(--primary-white-color);
-    background-image: url('../i');
+    background-image: url('./images/mobile/hero/hero-480.jpg');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 480px 400px;
     background-color: var(--new-hero-theme);
-}
-/* 
+
+    /* 
 1x - 96dpi
 2x - 192dpi
 3x - 288dpi
 */
 
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-    screen and (min-resolution: 192dpi) and (max-width: 767px),
-    screen and (min-resolution: 2dppx) and (max-width: 767px) {
-    .hero {
-        background-image: url('../images/Фон/header-mobile@2x.jpg');
+    @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+        screen and (min-resolution: 192dpi) and (max-width: 767px),
+        screen and (min-resolution: 2dppx) and (max-width: 767px) {
+        .hero {
+            background-image: url('../images/mobile/hero/hero-480@2x.jpg');
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .hero {
+            background-image: url('../images/tablet/hero/hero-768.jpg');
+        }
+    }
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+        screen and (min-resolution: 192dpi) and (min-width: 768px),
+        screen and (min-resolution: 2dppx) and (min-width: 768px) {
+        .hero {
+            background-image: url('../images/tablet/hero/hero-768@2x.jpg');
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        .hero {
+            background-image: url('../images/desktop/hero/hero-1600.jpg');
+        }
+    }
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+        screen and (min-resolution: 192dpi) and (min-width: 1200px),
+        screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+        .hero {
+            background-image: url('../images/desktop/hero/hero-1600@2x.jpg');
+        }
+    }
+}
+.hero-title {
+    @include font(44px, 900, 60px);
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+
+    @media screen and (min-width: 768px), (min-width: 1600px) {
+        margin-left: 237px;
+        margin-right: 237px;
+        margin-bottom: 30px;
     }
 }
 
-@media screen and (min-width: 768px) {
-    .hero {
-        background-image: url('../images/Фон_html/header-tablet.jpg');
-    }
-}
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-    screen and (min-resolution: 192dpi) and (min-width: 768px),
-    screen and (min-resolution: 2dppx) and (min-width: 768px) {
-    .hero {
-        background-image: url('../images/Фон_html/header-tablet@2x.jpg');
-    }
-}
-@media screen and (min-width: 1200px) {
-    .hero {
-        background-image: url('../images/Фон_html/header-desktop.jpg');
-    }
-}
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-    screen and (min-resolution: 192dpi) and (min-width: 1200px),
-    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
-    .hero {
-        background-image: url('../images/Фон_html/header-desktop@2x.jpg');
-    }
-}
 // @media screen and (min-width: 768px), (min-width: 1600px) {
 //     flex-basis: 50%;
 //     flex-wrap: wrap;

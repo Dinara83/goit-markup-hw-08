@@ -1,4 +1,3 @@
-@charset "UTF-8";
 :root {
   --primary-font: "Roboto", sans-serif;
   --secondary-font: "Raleway", sans-serif;
@@ -138,6 +137,7 @@ button {
     pointer-events: auto;
   }
   .mobile-menu__container {
+    display: flex;
     flex-direction: column;
     height: 100%;
     position: relative;
@@ -570,7 +570,7 @@ button {
 .hero {
   text-align: center;
   color: var(--primary-white-color);
-  background-image: url("../i");
+  background-image: url("../images/mobile/hero/hero-480.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 480px 400px;
@@ -584,26 +584,26 @@ button {
 */
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .hero {
-    background-image: url("../images/Фон/header-mobile@2x.jpg");
+    background-image: url("../images/mobile/hero/hero-480@2x.jpg");
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url("../images/Фон_html/header-tablet.jpg");
+    background-image: url("../images/tablet/hero/hero-768.jpg");
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
-    background-image: url("../images/Фон_html/header-tablet@2x.jpg");
+    background-image: url("../images/tablet/hero/hero-768@2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: url("../images/Фон_html/header-desktop.jpg");
+    background-image: url("../images/desktop/hero/hero-1600.jpg");
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
-    background-image: url("../images/Фон_html/header-desktop@2x.jpg");
+    background-image: url("../images/desktop/hero/hero-1600@2x.jpg");
   }
 }/*# sourceMappingURL=main.css.map */
