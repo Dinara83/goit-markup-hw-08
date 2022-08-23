@@ -22,10 +22,12 @@
         }
     }
     .mobile-menu__container {
+        flex-direction: column;
+        height: 100%;
         position: relative;
-        padding-top: 48px;
-        padding-bottom: 48px;
+        padding: 48px 40px;
     }
+
     .mobile-menu__close-btn {
         position: absolute;
         justify-items: center;
@@ -33,19 +35,60 @@
         right: 15px;
         background-color: transparent;
         border: none;
-        // height: 40px;
         padding: 0;
         line-height: 0;
+    }
 
-        .mobile-close-btn-icon {
-            fill: var(--basic-color);
-            transition: fill var(--transition-dur-and-funk);
+    .mobile-menu__close-icon {
+        transition: fill var(--transition-dur-and-funk);
 
-            .mobile-close-btn:hover &,
-            .mobile-close-btn:focus & {
-                fill: var(--accent-color);
-                border-color: var(--accent-color);
-            }
+        .mobile-menu__close-btn:hover &,
+        .mobile-menu__close-btn:focus & {
+            fill: var(--accent-color);
+        }
+    }
+
+    .mobile-nav-menu__item {
+        margin-bottom: 32px;
+    }
+
+    .mobile-nav-menu__link {
+        @include font(40px, 500, 47px);
+        color: var(--basic-color);
+    }
+
+    .mobile-nav-menu__link_current {
+        position: relative;
+        color: var(--accent-color);
+    }
+
+    .mobile-menu-tel__link {
+        @include font(34px, 500, 40px);
+        color: var(--accent-color);
+    }
+
+    .mobile-menu-mail__link {
+        @include font(24px, 500, 28px);
+        color: var(--primary-color);
+    }
+    .mobile-menu-social {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .mobile-menu-social__link {
+        position: relative;
+        @include font(18px, 500, 22px);
+        color: var(--accent-color);
+
+        &::after {
+            position: absolute;
+            content: '';
+            border: 1px solid rgba(33, 33, 33, 0.2);
+            transform: rotate(90deg);
+            width: 22px;
+            height: 0px;
         }
     }
 }

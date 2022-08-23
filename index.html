@@ -41,6 +41,7 @@
                         </li>
                     </ul>
                 </nav>
+                <!-- --------------------------------- BURGER-OPEN-BUTTON --------------------------------- -->
                 <button type="button" class="mobile-menu-open" data-menu-open>
                     <svg class="mobile-menu-open__icon" width="40" height="40">
                         <use href="./images/icon/symbol-defs-modal.svg#burger-icon"></use>
@@ -48,23 +49,31 @@
                 </button>
 
                 <ul class="menu-nav-contact">
-                    <li class="menu-nav__item">
-                        <a class="menu-nav__contact-link" href="meilto:info@devstudio.com">
-                            <svg class="menu-contact-icon" width="16" height="12">
-                                <use href="./images/icon/symbol-defs.svg#envelope"></use></svg
+                    <li class="menu-nav-contact__item">
+                        <a class="menu-nav-contact__link" href="meilto:info@devstudio.com">
+                            <svg class="menu-contact-icon" width="14" height="10">
+                                <use
+                                    href="./images/icon/symbol-defs-contact.svg#envelope"
+                                ></use></svg
                             >info@devstudio.com</a
                         >
                     </li>
 
-                    <li class="menu-nav__item">
-                        <a class="menu-nav__contact-link" href="tel:+380961111111">
-                            <svg class="menu-contact-icon" width="10" height="16">
-                                <use href="./images/icon/symbol-defs.svg#smartphone"></use></svg
+                    <li class="menu-nav-contact__item">
+                        <a class="menu-nav-contact__link" href="tel:+380961111111">
+                            <svg class="menu-contact-icon" width="10" height="14">
+                                <use
+                                    href="./images/icon/symbol-defs-contact.svg#smartphone"
+                                ></use></svg
                             >+38 096 111 11 11</a
                         >
                     </li>
                 </ul>
             </div>
+
+            <!-- --------------------------------- MOBILE-MENU --------------------------------- -->
+
+            <!-- --------------------------------- CLOSE-BUTTON --------------------------------- -->
             <div class="mobile-menu" data-menu>
                 <div class="container mobile-menu__container">
                     <button class="mobile-menu__close-btn" data-menu-close>
@@ -72,33 +81,66 @@
                             <use href="./images/icon/symbol-defs-modal.svg#close-black-icon"></use>
                         </svg>
                     </button>
-                    <ul>
-                        <li>
-                            <a href="">link-1</a>
+                    <!-- --------------------------------- menu --------------------------------- -->
+
+                    <!-- <div class="mobile-nav"> -->
+                    <ul class="mobile-nav-menu">
+                        <li class="mobile-nav-menu__item">
+                            <a
+                                class="mobile-nav-menu__link mobile-nav-menu__link_current"
+                                href="./index.html"
+                                >Студия</a
+                            >
                         </li>
-                        <li>
-                            <a href="">link-2</a>
+                        <li class="mobile-nav-menu__item">
+                            <a class="mobile-nav-menu__link" href="./portfolio.html">Портфолио</a>
                         </li>
-                        <li>
-                            <a href="">link-3</a>
-                        </li>
-                        <li>
-                            <a href="">link-4</a>
+                        <li class="mobile-nav-menu__item">
+                            <a class="mobile-nav-menu__link" href="./index.html">Контакты</a>
                         </li>
                     </ul>
+
+                    <ul class="mobile-menu-contact">
+                        <li class="mobile-menu-contact__item">
+                            <a class="mobile-menu-tel__link" href="tel:+380961111111"
+                                >+38 096 111 11 11</a
+                            >
+                        </li>
+                        <li class="mobile-menu-contact__item">
+                            <a class="mobile-menu-mail__link" href="meilto:info@devstudio.com"
+                                >info@devstudio.com</a
+                            >
+                        </li>
+                    </ul>
+
+                    <ul class="mobile-menu-social">
+                        <li class="mobile-menu-social__item">
+                            <a class="mobile-menu-social__link" href="">Instagram</a>
+                        </li>
+                        <li class="mobile-menu-social__item">
+                            <a class="mobile-menu-social__link" href="">Twitter</a>
+                        </li>
+                        <li class="mobile-menu-social__item">
+                            <a class="mobile-menu-social__link" href="">Facebook</a>
+                        </li>
+                        <li class="mobile-menu-social__item">
+                            <a class="mobile-menu-social__link" href="">LinkedIn</a>
+                        </li>
+                    </ul>
+                    <!-- </div> -->
                 </div>
             </div>
         </header>
         <!-- --------------------------------- HERO --------------------------------- -->
         <main>
-            <!-- <section class="hero section">
+            <section class="hero section">
                 <div class="container">
                     <h1 class="hero-title">эффективные решения для вашего бизнеса</h1>
                     <button class="button-hero" type="button" data-modal-open>
                         Заказать услугу
                     </button>
                 </div>
-            </section> -->
+            </section>
             <!-- --------------------------------- VISUALLY --------------------------------- -->
             <!-- <section class="visually section">
                 <div class="container">
