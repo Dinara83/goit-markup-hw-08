@@ -96,24 +96,24 @@ button {
   }
 }
 .container {
-  width: 100%;
+  min-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0 auto;
 }
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
-    margin: 0 auto;
+    min-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    min-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    min-width: 1200px;
   }
 }
 
@@ -324,23 +324,12 @@ button {
 }
 
 .menu-nav-contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   position: color var(--transition-dur-and-funk);
 }
-
 .menu-nav-contact__item:not(:last-child) {
   margin-right: 30px;
   cursor: pointer;
 }
-
 .menu-nav-contact__link {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -356,22 +345,6 @@ button {
   }
   .menu-nav-contact {
     display: none;
-  }
-  .page-header {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-}
-@media screen and (max-width: 1199px) {
-  .logo {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 1.1666666667;
-  }
-  .logo .logo-studio {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 1.1666666667;
   }
 }
 @media screen and (min-width: 768px) {
@@ -391,6 +364,16 @@ button {
   }
 }
 @media screen and (max-width: 1199px) {
+  .logo {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.1666666667;
+  }
+  .logo .logo-studio {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.1666666667;
+  }
   .menu-nav-contact {
     padding: 21px 0;
   }
@@ -412,6 +395,17 @@ button {
     font-size: 26px;
     font-weight: 700;
     line-height: 1.1923076923;
+  }
+  .menu-nav-contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 .hero {
