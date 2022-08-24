@@ -18,6 +18,8 @@
     font-family: var(--secondary-font);
     letter-spacing: 0.03em;
     color: var(--accent-color);
+    margin-top: 16px;
+    margin-bottom: 16px;
 
     .logo-studio {
         font-family: var(--secondary-font);
@@ -105,10 +107,10 @@
         display: none;
     }
 
-    .page-header {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
+    // .page-header {
+    //     padding-top: 10px;
+    //     padding-bottom: 10px;
+    // }
 
     .mobile-menu-open {
         background-color: transparent;
