@@ -8,13 +8,6 @@
     align-items: center;
 }
 
-.mobile-menu-open {
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    line-height: 0;
-}
-
 .page-header-nav {
     display: flex;
     align-items: center;
@@ -103,8 +96,6 @@
     }
 }
 
-
-
 @media screen and (max-width: 767px) {
     .menu-nav {
         display: none;
@@ -114,10 +105,17 @@
         display: none;
     }
 
-    // .page-header {
-    //     padding-top: 10px;
-    //     padding-bottom: 10px;
-    // }
+    .page-header {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .mobile-menu-open {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        line-height: 0;
+    }
 }
 
 @media screen and (min-width: 768px) {
