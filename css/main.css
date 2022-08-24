@@ -418,9 +418,6 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   padding-top: 118px;
   padding-bottom: 118px;
   color: var(--primary-white-color);
@@ -473,13 +470,6 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-  .hero {
-    display: block;
-    max-width: 100%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
   .hero-title {
     padding-left: 204px;
     padding-right: 204px;
@@ -487,8 +477,6 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -532,4 +520,7 @@ button {
   .button-hero {
     width: 216px;
   }
+}
+.visually {
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

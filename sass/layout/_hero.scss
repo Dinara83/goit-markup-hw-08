@@ -3,7 +3,6 @@
     height: 400px;
     text-align: center;
     align-items: center;
-    justify-content: center;
     padding-top: 118px;
     padding-bottom: 118px;
     color: var(--primary-white-color);
@@ -65,12 +64,6 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 }
 
 @media screen and (min-width: 768px) {
-    .hero {
-        display: block;
-        max-width: 100%;
-        align-items: center;
-    }
-
     .hero-title {
         padding-left: 204px;
         padding-right: 204px;
@@ -79,7 +72,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 
 @media screen and (min-width: 1200px) {
     .hero {
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
         height: 600px;
         padding-top: 200px;
         padding-bottom: 200px;
