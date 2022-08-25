@@ -1,43 +1,70 @@
-.visually {
-    text-align: center;
+// .visually {
+//     padding-bottom: 0;
+// }
+
+.visually-list__item {
+    margin-bottom: 30px;
+
+    &:last-child {
+        margin-bottom: 0px;
+    }
 }
 
-// .visually-list {
-//     @extend %align;
 
-//     & > .visually-list__item:not(:last-child) {
-//         margin-right: 30px;
-//     }
-// }
 
-// .visually-icon {
-//     flex-wrap: wrap;
-//     @extend %align;
-//     height: 120px;
-//     background: var(--primary-light-grey-color);
-//     border-radius: 4px;
-//     margin-bottom: 30px;
+.visually-icon {
+    flex-wrap: wrap;
+    @extend %align;
+    height: 120px;
+    background: var(--primary-light-grey-color);
+    border-radius: 4px;
+    margin-bottom: 30px;
 
-//     .visually-icon__item {
-//         display: flex;
-//         flex-wrap: wrap;
-//         width: 70px;
-//         height: 70px;
-//     }
-// }
+    .visually-icon__item {
+        width: 70px;
+        height: 70px;
+    }
+}
 
-// .main-title {
-//     @include font($fw: 700);
-//     letter-spacing: 0.03em;
-//     text-transform: uppercase;
-//     color: var(--basic-color);
-// }
+.main-title {
+    text-align: center;
+    @include font($fw: 700);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--basic-color);
+}
 
-// .suptitle {
-//     @include font($lh: 24px);
-//     letter-spacing: 0.03em;
-//     align-items: center;
-//     color: var(--primary-color);
-//     margin-top: 10px;
-//     margin-bottom: 0px;
-// }
+.suptitle {
+    @include font($lh: 24px);
+    letter-spacing: 0.03em;
+    color: var(--primary-color);
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+@media screen and (min-width: 768px) {
+    .visually-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: -30px;
+    }
+
+    .visually-list__item {
+        width: calc((100% - 60px) / 2);
+        margin-right: 30px;
+    }
+
+    .main-title {
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .visually-list {
+        display: inline-flex;
+    }
+
+    .visually-list__item {
+        width: calc((100% - 120px) / 4);
+    }
+}
