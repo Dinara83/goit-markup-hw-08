@@ -669,7 +669,6 @@ button {
 }
 
 .professional-list__item {
-  max-width: 100%;
   background: var(--primary-white-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -803,5 +802,89 @@ button {
     font-weight: 700;
     line-height: 1.1666666667;
     margin-bottom: 50px;
+  }
+}
+.under {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--primary-theme-dark);
+}
+
+.under-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.logo-foot {
+  font-family: var(--secondary-font);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.1666666667;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+.logo-foot .logo-studio-foot {
+  font-family: var(--secondary-font);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.1666666667;
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color);
+}
+
+.address-list {
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.address-list__link {
+  color: var(--primary-white-color);
+}
+
+.address-list__item {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7142857143;
+  letter-spacing: 0.03em;
+}
+
+.address-contact__item {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7142857143;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (min-width: 768px) {
+  .under-container {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .under {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo-foot {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.1923076923;
+  }
+  .logo-foot .logo-studio-foot {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.1923076923;
   }
 }/*# sourceMappingURL=main.css.map */
