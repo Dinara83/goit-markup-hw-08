@@ -2,6 +2,13 @@
     background-color: var(--primary-light-grey-color);
 }
 
+@media screen and (max-width: 1199px) {
+    .professional-title {
+        @include font(28px, 700, 33px);
+        margin-bottom: 30px;
+    }
+}
+
 .professional-title {
     letter-spacing: 0.03em;
     text-align: center;
@@ -15,12 +22,6 @@
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     margin-bottom: 30px;
-}
-
-.photo {
-    display: block;
-    width: 100%;
-    height: auto;
 }
 
 .professional-title-list {
@@ -91,12 +92,6 @@
     }
 }
 
-@media screen and (max-width: 1199px) {
-    .professional-title {
-        @include font(28px, 700, 33px);
-        margin-bottom: 30px;
-    }
-}
 
 @media screen and (min-width: 1200px) {
     .professional-title {
