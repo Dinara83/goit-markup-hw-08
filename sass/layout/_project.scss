@@ -1,6 +1,4 @@
 .project__item {
-    cursor: pointer;
-    flex-basis: calc((100% - 60px) / 3);
     background: var(--primary-white-color);
     border: 1px solid var(--primary-theme-light);
     transition: border var(--transition-dur-and-funk), box-shadow var(--transition-dur-and-funk);
@@ -17,70 +15,101 @@
     }
 }
 
+.project-list-img {
+    position: relative;
+    overflow: hidden;
 
-// .project {
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content: space-between;
-//     gap: 30px;
+    .overlay {
+        position: absolute;
+        margin: 0 auto;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100.5%;
+        @include font($fs: 18px, $lh: 28px);
+        color: var(--primary-white-color);
+        padding: 77px 24px;
+        background-color: rgba(33, 150, 243, 0.9);
+        overflow: auto;
+        transform: translate(0, 100%);
+        transition: transform var(--transition-dur-and-funk);
+    }
+}
 
-//     .project__item {
-//         cursor: pointer;
-//         flex-basis: calc((100% - 60px) / 3);
-//         background: var(--primary-white-color);
-//         border: 1px solid var(--primary-theme-light);
-//         transition: border var(--transition-dur-and-funk), box-shadow var(--transition-dur-and-funk);
+.project-title {
+    padding: 24px 20px;
 
-//         &:hover .overlay,
-//         &:focus .overlay {
-//             transform: translate(0, 0);
-//         }
+    .project-name {
+        @include font(18px, 700, 36px);
+        letter-spacing: 0.06em;
+        color: var(--basic-color);
+    }
 
-//         &:hover {
-//             border: 1px solid var(--primary-theme-light);
-//             box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-//                 1px 4px 6px rgba(0, 0, 0, 0.16);
-//         }
-//     }
-// }
+    .project-contact {
+        @include font($fs: 16px, $lh: 30px);
+        color: var(--primary-color);
+        margin-top: 4px;
+        margin-bottom: 0;
+    }
+}
 
-// .project-list-img {
-//     position: relative;
-//     overflow: hidden;
+@media screen and (min-width: 768px) {
+    // .project {
+    // max-width: 100%;
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
+    // margin-right: 30px;
+    // gap: 30px;
 
-//     .overlay {
-//         position: absolute;
-//         margin: 0 auto;
-//         left: 0;
-//         top: 0;
-//         width: 100%;
-//         height: 100.5%;
-//         @include font($fs: 18px, $lh: 28px);
-//         color: var(--primary-white-color);
-//         padding-top: 63px;
-//         padding-left: 24px;
-//         padding-bottom: 63px;
-//         padding-right: 24px;
-//         background-color: rgba(33, 150, 243, 0.9);
-//         overflow: auto;
-//         transform: translate(0, 100%);
-//         transition: transform var(--transition-dur-and-funk);
-//     }
-// }
+    // .project__item {
+    //     cursor: pointer;
+    //     flex-basis: calc((100% - 20px) / 2);
+    // }
 
-// .project-title {
-//     padding: 24px 20px;
+    .project {
+        display: -webkit-box;
+        align-items: flex-start;
+        justify-content: space-between;
 
-//     .project-name {
-//         @include font(18px, 700, 36px);
-//         letter-spacing: 0.06em;
-//         color: var(--basic-color);
-//     }
+        &..project__item:not(:last-child) {
+            gap: 30px;
+        }
+    }
+}
 
-//     .project-contact {
-//         @include font($fs: 16px, $lh: 30px);
-//         color: var(--primary-color);
-//         margin-top: 4px;
-//         margin-bottom: 0;
-//     }
-// }
+.overlay {
+    padding-top: 49px;
+}
+
+.project-title {
+    padding-top: 20px;
+    padding-bottom: 56px;
+}
+
+
+@media screen and (min-width: 1200px) {
+    .project {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        .project__item {
+            flex-basis: calc((100% - 60px) / 3);
+            background: var(--primary-white-color);
+            border: 1px solid var(--primary-theme-light);
+            transition: border var(--transition-dur-and-funk), box-shadow var(--transition-dur-and-funk);
+
+            &:hover .overlay,
+            &:focus .overlay {
+                transform: translate(0, 0);
+            }
+
+            &:hover {
+                border: 1px solid var(--primary-theme-light);
+                box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+                    1px 4px 6px rgba(0, 0, 0, 0.16);
+            }
+        }
+    }
+}
