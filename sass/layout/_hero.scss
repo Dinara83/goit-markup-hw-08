@@ -1,5 +1,5 @@
 .hero {
-    max-width: 1600;
+    width: 100%;
     margin: 0 auto;
     padding: 118px 0;
     text-align: center;
@@ -12,11 +12,6 @@
     background-color: rgba(47, 48, 58, 0.4);
 }
 
-/* 
-1x - 96dpi
-2x - 192dpi
-3x - 288dpi
-*/
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
 screen and (min-resolution: 192dpi) and (max-width: 767px),
 screen and (min-resolution: 2dppx) and (max-width: 767px) {
@@ -74,7 +69,6 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     color: var(--primary-white-color);
     display: inline-block;
     padding: 10px 24px;
-    // margin: auto;
     text-decoration: none;
     transition: background-color var(--transition-dur-and-funk);
 
