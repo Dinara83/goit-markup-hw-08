@@ -2,16 +2,16 @@
     border: 1px solid var(--line-header);
 }
 
-.page-header-container {
+.page-header__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.page-header-nav {
-    display: flex;
+.page-header__nav {
+    // display: flex;
     align-items: center;
-    position: color var(--transition-dur-and-funk);
+    transition: color var(--transition-dur-and-funk);
 }
 
 .logo {
@@ -85,7 +85,7 @@
 }
 
 .menu-nav-contact {
-    position: color var(--transition-dur-and-funk);
+    transition: color var(--transition-dur-and-funk);
 
     &__item:not(:last-child) {
         margin-right: 30px;
