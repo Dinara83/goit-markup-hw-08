@@ -897,6 +897,9 @@ button {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+.project .project__item:not(:last-child) {
+  margin-bottom: 30px;
+}
 
 .project-list-img {
   position: relative;
@@ -925,7 +928,7 @@ button {
 }
 
 .project-title {
-  padding: 24px 20px;
+  padding: 20px 24px;
 }
 .project-title .project-name {
   font-size: 18px;
@@ -945,7 +948,6 @@ button {
 
 @media screen and (min-width: 768px) {
   .project {
-    max-width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -954,57 +956,20 @@ button {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-right: 30px;
+  }
+  .project.project__item:not(:last-child) {
     gap: 30px;
-  }
-  .project .project__item {
-    cursor: pointer;
-    -ms-flex-preferred-size: calc((100% - 20px) / 2);
-        flex-basis: calc((100% - 20px) / 2);
-  }
-  .project .project {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .project .project.professional-list__item:not(:last-child) {
-    margin-right: 30px;
   }
   .overlay {
     padding-top: 49px;
   }
   .project-title {
-    padding-top: 20px;
     padding-bottom: 56px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .project {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 30px;
-  }
-  .project .project__item {
-    -ms-flex-preferred-size: calc((100% - 60px) / 3);
-        flex-basis: calc((100% - 60px) / 3);
-    background: var(--primary-white-color);
-    border: 1px solid var(--primary-theme-light);
-    -webkit-transition: border var(--transition-dur-and-funk), -webkit-box-shadow var(--transition-dur-and-funk);
-    transition: border var(--transition-dur-and-funk), -webkit-box-shadow var(--transition-dur-and-funk);
-    transition: border var(--transition-dur-and-funk), box-shadow var(--transition-dur-and-funk);
-    transition: border var(--transition-dur-and-funk), box-shadow var(--transition-dur-and-funk), -webkit-box-shadow var(--transition-dur-and-funk);
-  }
-  .project .project__item:hover .overlay, .project .project__item:focus .overlay {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-  .project .project__item:hover {
-    border: 1px solid var(--primary-theme-light);
-    -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  .project-title {
+    padding: 63px 24px;
   }
 }
 .under {
