@@ -879,6 +879,27 @@ button {
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.project__item {
+  cursor: pointer;
+  -ms-flex-preferred-size: calc((100% - 60px) / 3);
+      flex-basis: calc((100% - 60px) / 3);
+  background: var(--primary-white-color);
+  border: 1px solid var(--primary-theme-light);
+  -webkit-transition: border var(--transition-dur-and-funk), -webkit-box-shadow var(--transition-dur-and-funk);
+  transition: border var(--transition-dur-and-funk), -webkit-box-shadow var(--transition-dur-and-funk);
+  transition: border var(--transition-dur-and-funk), box-shadow var(--transition-dur-and-funk);
+  transition: border var(--transition-dur-and-funk), box-shadow var(--transition-dur-and-funk), -webkit-box-shadow var(--transition-dur-and-funk);
+}
+.project__item:hover .overlay, .project__item:focus .overlay {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+.project__item:hover {
+  border: 1px solid var(--primary-theme-light);
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .under {
   padding-top: 60px;
   padding-bottom: 60px;
