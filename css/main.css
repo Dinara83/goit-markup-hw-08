@@ -1403,7 +1403,6 @@ button {
 }
 
 .contact-form-input {
-  width: 100%;
   padding: 16px 15px;
   font-size: 16px;
   font-weight: 400;
@@ -1440,7 +1439,6 @@ button {
 }
 
 .contact-form-btn {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1475,6 +1473,9 @@ button {
   .contact-form {
     margin-left: 166px;
     margin-right: 152px;
+  }
+  .contact-form-input {
+    width: 100%;
   }
   .message-form-title {
     text-align: center;

@@ -9,7 +9,6 @@
 }
 
 .contact-form-input {
-    width: 100%;
     // align-content: center;
     // height: 50px;
     padding: 16px 15px;
@@ -34,7 +33,6 @@
 }
 
 .contact-form-btn {
-    width: 100%;
     display: flex;
     align-items: center;
     text-align: center;
@@ -65,6 +63,10 @@
     .contact-form {
         margin-left: 166px;
         margin-right: 152px;
+    }
+
+    .contact-form-input {
+        width: 100%;
     }
 
     .message-form-title {
