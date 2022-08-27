@@ -9,8 +9,6 @@
 }
 
 .contact-form-input {
-    // align-content: center;
-    // height: 50px;
     padding: 16px 15px;
     @include font(16px, 400, 20px);
     letter-spacing: 0.03em;
@@ -103,13 +101,8 @@
 
     .contact-form-input {
         width: 358px;
-        @include font(16px, 400, 20px);
         display: flex;
         margin-right: 12px;
         align-items: center;
-    }
-
-    .contact-form-btn {
-        @include font(16px, 700, 30px);
     }
 }
