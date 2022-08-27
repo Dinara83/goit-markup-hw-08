@@ -37,6 +37,19 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
 @media screen and (min-width: 1200px) {
     .hero {
         background-image: url('../../images/background/hero1600.jpg');
+        height: 600px;
+        padding: 200px 0;
+    }
+
+    .hero-title {
+        width: 696px;
+        @include font(44px, 900, 60px);
+        margin: 0 auto;
+    }
+
+    .button-hero {
+        width: 216px;
+        padding: 10px 32px;
     }
 }
 
@@ -75,23 +88,5 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     &:hover,
     &:focus {
         background-color: var(--accent-light-color);
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .hero {
-        height: 600px;
-        padding: 200px 0;
-    }
-
-    .hero-title {
-        width: 696px;
-        @include font(44px, 900, 60px);
-        margin: 0 auto;
-    }
-
-    .button-hero {
-        width: 216px;
-        padding: 10px 32px;
     }
 }

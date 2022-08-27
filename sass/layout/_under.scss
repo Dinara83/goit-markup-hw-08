@@ -38,14 +38,6 @@
     color: rgba(255, 255, 255, 0.6);
 }
 
-@media screen and (max-width: 1199px) {
-    .address {
-        text-align: center;
-        align-items: center;
-        margin-bottom: 0;
-    }
-}
-
 @media screen and (min-width: 768px) {
     .under-address {
         display: flex;
@@ -59,6 +51,14 @@
 
     .footer-social {
         margin-left: 165px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .address {
+        text-align: center;
+        align-items: center;
+        margin-bottom: 0;
     }
 }
 

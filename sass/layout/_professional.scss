@@ -2,13 +2,6 @@
     background-color: var(--primary-light-grey-color);
 }
 
-@media screen and (max-width: 1199px) {
-    .professional-title {
-        @include font(28px, 700, 33px);
-        margin-bottom: 30px;
-    }
-}
-
 .professional-title {
     letter-spacing: 0.03em;
     text-align: center;
@@ -100,6 +93,12 @@
     }
 }
 
+@media screen and (max-width: 1199px) {
+    .professional-title {
+        @include font(28px, 700, 33px);
+        margin-bottom: 30px;
+    }
+}
 
 @media screen and (min-width: 1200px) {
     .professional-title {
