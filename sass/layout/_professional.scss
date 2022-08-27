@@ -39,7 +39,7 @@
     }
 
     .profile {
-        @include font($fs: 16px, $lh: 19px);
+        @include font(16px, 400, 19px);
         letter-spacing: 0.03em;
         text-align: center;
         color: var(--primary-color);

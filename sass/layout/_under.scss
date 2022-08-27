@@ -28,13 +28,13 @@
 }
 
 .address-list__item {
-    @include font($lh: 24px);
+    @include font(14px, 400, 24px);
     letter-spacing: 0.03em;
     margin-bottom: 8px;
 }
 
 .address-contact-item {
-    @include font($lh: 24px);
+    @include font(14px, 400, 24px);
     color: rgba(255, 255, 255, 0.6);
 }
 

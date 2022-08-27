@@ -1,102 +1,101 @@
-    .message-form-title {
-        margin-top: 0;
-        margin-bottom: 20px;
-        @include font($fw: 700);
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        font-style: normal;
-        color: var(--primary-white-color);
+.message-form-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    @include font(14px, 700);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    font-style: normal;
+    color: var(--primary-white-color);
+}
+
+.contact-form-input {
+    width: 100%;
+    height: 50px;
+    padding: 16px 15px;
+    @include font(14px, 700);
+    letter-spacing: 0.03em;
+    color: var(--primary-white-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    outline: none;
+    background-color: var(--primary-theme-dark);
+    transition: border-color var(--transition-dur-and-funk);
+
+    &:hover {
+        border-color: var(--accent-color);
+        outline: none;
     }
 
-    .contact-form-input {
-        width: 100%;
-        height: 50px;
-        padding: 16px 15px;
-        @include font($fw: 700);
-        letter-spacing: 0.03em;
-        color: var(--primary-white-color);
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-        border-radius: 4px;
-        outline: none;
-        background-color: var(--primary-theme-dark);
-        transition: border-color var(--transition-dur-and-funk);
+    & input::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
 
-        &:hover {
-            border-color: var(--accent-color);
-            outline: none;
-        }
+.contact-form-btn {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    @include font(14px, 700);
+    color: var(--primary-white-color);
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px 30px;
+    border: none;
+    transition: color var(--transition-dur-and-funk),
+        background-color var(--transition-dur-and-funk);
 
-        & input::placeholder {
-            color: rgba(255, 255, 255, 0.6);
-        }
+    &:focus,
+    &:hover {
+        color: rgba(255, 255, 255, 0.6);
+        background-color: var(--accent-color);
+    }
+
+    .form-form-btn-icon {
+        fill: var(--primary-white-color);
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .contact-form {
+        // width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 60px;
+    }
+
+    .message-form-title {
+        text-align: center;
+        align-items: center;
     }
 
     .contact-form-btn {
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .contact-form {
+        margin-left: 93px;
         display: flex;
+        flex-direction: column;
+    }
+
+    .contact-form-under {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contact-form-input {
+        width: 358px;
+        @include font(16px, 400, 20px);
+        display: flex;
+        margin-right: 12px;
         align-items: center;
-        text-align: center;
-        letter-spacing: 0.06em;
-        @include font($fw: 700);
-        color: var(--primary-white-color);
-        background: var(--accent-color);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
-        padding: 10px 30px;
-        border: none;
-        transition: color var(--transition-dur-and-funk),
-            background-color var(--transition-dur-and-funk);
-
-        &:focus,
-        &:hover {
-            color: rgba(255, 255, 255, 0.6);
-            background-color: var(--accent-color);
-        }
-
-        .form-form-btn-icon {
-            fill: var(--primary-white-color);
-            margin-left: 10px;
-        }
     }
-
-    @media screen and (max-width: 1199px) {
-        .contact-form {
-            // width: 450px;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 60px;
-        }
-
-        .message-form-title {
-            text-align: center;
-            align-items: center;
-        }
-
-        .contact-form-btn {
-            margin-top: 30px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    }
-
-
-    @media screen and (min-width: 1200px) {
-        .contact-form {
-            margin-left: 93px;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .contact-form-under {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .contact-form-input {
-            width: 358px;
-            @include font($fs: 16px, $lh: 20px);
-            display: flex;
-            margin-right: 12px;
-            align-items: center;
-        }
-    }
+}

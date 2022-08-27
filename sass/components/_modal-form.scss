@@ -23,7 +23,7 @@
 
 .modal-form-field__desc {
     display: block;
-    @include font($fs: 12px, $lh: 14px);
+    @include font(12px, 400, 14px);
     color: var(--primary-color);
     margin-bottom: 4px;
 }
@@ -70,7 +70,7 @@
     transition: border-color var(--transition-dur-and-func);
 
     &::placeholder {
-        @include font($fs: 12px, $lh: 14px);
+        @include font(12px, 400, 14px);
         letter-spacing: 0.01em;
         color: rgba(117, 117, 117, 0.5);
         cursor: pointer;
@@ -84,7 +84,7 @@
 
 .modal-form-check-desc {
     @extend %align;
-    @include font($lh: 24px);
+    @include font(14px, 400, 24px);
     letter-spacing: 0.03em;
     margin-bottom: 30px;
     color: var(--primary-color);
