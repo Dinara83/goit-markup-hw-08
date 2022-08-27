@@ -1054,7 +1054,7 @@ button {
   height: 92px;
   border: 1px solid var(--secondary-grey-color);
   border-radius: 4px;
-  fill: var(--secondary-grey-color);
+  fill: afb1b8;
   -webkit-transition: fill var(--transition-dur-and-funk), border var(--transition-dur-and-funk);
   transition: fill var(--transition-dur-and-funk), border var(--transition-dur-and-funk);
 }
