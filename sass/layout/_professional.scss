@@ -91,10 +91,6 @@
         flex-wrap: wrap;
         display: flex;
     }
-
-    &.professional-list__item:not(:last-child) {
-        margin-right: 30px;
-    }
 }
 
 @media screen and (min-width: 1200px) {
