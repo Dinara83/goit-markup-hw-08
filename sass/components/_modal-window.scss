@@ -1,10 +1,3 @@
-@media screen and (max-width: 1199px) {
-    .modal {
-        min-width: 450px;
-        max-height: 609px;
-    }
-}
-
 .modal {
     position: absolute;
     top: 50%;
@@ -43,5 +36,12 @@
     .modal-close-btn:focus & {
         fill: var(--accent-color);
         border-color: var(--accent-color);
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .modal {
+        max-width: 450px;
+        max-height: 609px;
     }
 }
