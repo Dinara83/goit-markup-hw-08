@@ -40,12 +40,17 @@
     .visually-list {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
         margin-bottom: -30px;
     }
 
     .visually-list__item {
         width: calc((100% - 60px) / 2);
         margin-right: 30px;
+
+        &:last-child {
+            margin-right: 0px;
+        }
     }
 
     .main-title {
@@ -60,5 +65,9 @@
 
     .visually-list__item {
         width: calc((100% - 120px) / 4);
+
+        &:last-child {
+            margin-right: 0px;
+        }
     }
 }

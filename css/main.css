@@ -850,11 +850,17 @@ button {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-bottom: -30px;
   }
   .visually-list__item {
     width: calc((100% - 60px) / 2);
     margin-right: 30px;
+  }
+  .visually-list__item:last-child {
+    margin-right: 0px;
   }
   .main-title {
     text-align: left;
@@ -868,6 +874,9 @@ button {
   }
   .visually-list__item {
     width: calc((100% - 120px) / 4);
+  }
+  .visually-list__item:last-child {
+    margin-right: 0px;
   }
 }
 .activity {
