@@ -780,6 +780,10 @@ button {
     background-image: url("../../images/background/hero1600@2x.jpg");
   }
 }
+.visually {
+  padding-bottom: 0;
+}
+
 .visually-list__item {
   margin-bottom: 30px;
 }
