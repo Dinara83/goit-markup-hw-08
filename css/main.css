@@ -141,8 +141,6 @@ button {
     -webkit-box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
             box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
     background-color: var(--primary-white-color);
-    -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -1094,6 +1092,12 @@ button {
   fill: var(--accent-color);
 }
 
+@media screen and (max-width: 479px) {
+  .clients-list__item {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
 @media screen and (min-width: 480px) {
   .clients-list__item {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
